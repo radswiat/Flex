@@ -1,21 +1,8 @@
-# Flex
-Flex is lightweight, react-kind framework with html operators like in angular.
-
-# Goals
-* Easy to extend
-* Easy to modify
-* Focus on removing javascript from html
-* TBC
-
-# Release date : probably never
-
-# Components
-Components seems quite similar to react/vue<br>
-Below you can see fully working example ( no DOM updates for now )<br>
-
-```javascript
 import Flex   from './flex';
+
 class Main extends Flex.Component{
+
+  // selector : 'app';
 
   constructor() {
     super();
@@ -27,6 +14,7 @@ class Main extends Flex.Component{
   render() {
     return(
       <div>
+
         <h2>Flex - html logic operators</h2>
 
         <h3>v-if</h3>
@@ -48,4 +36,7 @@ class Main extends Flex.Component{
     );
   }
 }
-```
+
+
+let t = new Main();
+t.render();

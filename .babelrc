@@ -1,0 +1,12 @@
+{
+  "presets": ["es2015", "stage-0"],
+  "plugins": [
+    ["babel-plugin-transform-react-jsx", {
+      "pragma": "Flex.createNode"
+    }],
+    ["babel-plugin-jsx-pragmatic", {
+      "module": "./flex",
+      "import": "Flex"
+    }]
+  ]
+}
